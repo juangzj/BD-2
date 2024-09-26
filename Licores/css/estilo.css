@@ -1,0 +1,144 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+#logo {
+  font-size: 1.5em;
+}
+
+#enlaces {
+  display: flex;
+  gap: 15px;
+}
+
+#enlaces a {
+  color: white;
+  text-decoration: none;
+}
+
+#menuToggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  #enlaces {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  #enlaces a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+  #enlaces.mostrar {
+    display: flex;
+  }
+}
+
+/* Estilos para la imagen destacada */
+#imagenDestacada {
+  width: 100%;
+  overflow: hidden;
+}
+
+#imagenDestacada img {
+  width: 100%;
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+
+
+/* Estilos para la sección de tarjetas de productos */
+#productos {
+  padding: 20px;
+  text-align: center;
+  /* Centra el contenido de la sección */
+}
+
+.contenedorTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.infoTarjeta {
+  padding: 15px;
+}
+
+.infoTarjeta h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.infoTarjeta p {
+  margin: 5px 0;
+}
+
+.infoTarjeta button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.infoTarjeta button:hover {
+  background-color: #555;
+}

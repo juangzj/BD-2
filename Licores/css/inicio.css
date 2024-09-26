@@ -1,0 +1,66 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+/* Estilos para la imagen  */
+#imagenDestacada {
+  width: 100%;
+  overflow: hidden;
+}
+
+#imagenDestacada img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* Para la vision y la mision */
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+#espacios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  margin: 20px 0;
+
+  padding: 0 10px;
+
+}
+
+.espacio {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  background-color: #f9f9f9;
+
+  box-sizing: border-box;
+
+}
+
+.espacio h2 {
+  margin-top: 0;
+}
+
+.espacio p {
+  margin-bottom: 0;
+}

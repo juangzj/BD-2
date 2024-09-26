@@ -1,0 +1,57 @@
+#menuToggle {
+  display: none;
+}
+
+/* Estilo para los paneles */
+#panel-izquierdo {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+#panel-derecho {
+  height: 500px;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel-derecho img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.boton-carro {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Alineación y centrado con espacio extra */
+.altura-total {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-central {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.boton-carro {
+  width: 80%;
+  /* Ancho fijo para los botones */
+  max-width: 200px;
+  /* Ancho máximo de los botones */
+  margin-bottom: 10px;
+  /* Espacio entre botones */
+  padding: 15px;
+  /* Ajustar padding para mayor área clickeable */
+}
